@@ -1,0 +1,91 @@
+/* -------------------------------
+base
+------------------------------- */
+
+/* other */
+/* background: #95CD69; //light green - banner
+/* background: #2EA370; //sandy green - maps
+/* background: #257E56; //medium green - header
+/* background: #144714; //dark green - ?footer
+/* background: #054F18; //dark-dark green - ? footer
+
+/* begin: sidebar initial style */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #95CD69;
+    position: fixed;
+    height: 70%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #9ECC78;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #2EA370;
+    color: white;
+}
+/* end: sidebar initial style */
+html,
+body{
+  color: #777; /* dark gray */
+  background: #fff; /* white */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.3;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: #424242; /* soft gray */
+  line-height: 1.1;
+}
+
+img {
+  max-width: 100%; /* fluid img, never go widder than natural size */
+  height: auto; /* no squashing */
+  border: 0;
+  vertical-align: middle; /* sit in middle of lines, no gaps */
+}
+
+/* all inside "a" element */
+a:focus img { background: #000; }
+a:hover img { background: #3bb2d0; }
+a:active img { background: #af0000; }
+
+blockquote { margin: 0; } /* no gray bar border at the left of the blockquote */
+/* -------------------------------
+wide
+------------------------------- */
+
+@media (min-width: 38em)
+{
+    body
+    {
+      font-size: 1.125em;
+      /* 18px/16px */
+    }
+}

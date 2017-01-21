@@ -1,0 +1,240 @@
+/* -------------------------------
+layout
+------------------------------- */
+
+/* other */
+/* background: #95CD69; //light green
+/* background: #2EA370; //sandy green
+/* background: #257E56; //medium green
+/* background: #144714; //dark green
+*/
+
+.wire {
+  border-style: solid;
+  border-width: thin;
+}
+
+.wire-green {
+  border-style: solid;
+  border-width: thin;
+  border-color: #95CD69;
+}
+/* row */
+.row {
+  clear: both; /* rows will clear any row above */
+  overflow: hidden; /* wrap around any floated items inside */
+}
+
+/* my row banner
+.row--banner { background: #257E56; } */
+.row--banner { background: #aaa }
+
+/* row-colors */
+.row--white { background: #fff }
+.row--light-green { background: #95CD69; }
+.row--sandy-green { background: #2EA370; }
+.row--medium-green { background: #257E56; }
+.row--dark-green { background: #144714; }
+.row--dark-dark-green { background: #054F18; }
+
+/* row-padding */
+.row--padding-footer-bar {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.row--padding-menu {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  /* ??px/??px*/
+}
+.row--padding-medium {
+  padding-top: 2.1875em;
+  padding-bottom: 2.1875em;
+  /* 35px/16px*/
+}
+.row--padding-wide {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  /* 35px/16px*/
+}
+.row--padding-graphs {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  /* 35px/16px*/
+}
+
+/* special modifiers */
+
+/* containers */
+.container-banner,
+.container-narrow,
+.container-medium,
+.container-wide {
+  margin: 0 auto; /* centered inside the rows "auto" */
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.container-narrow {
+  max-width: 34em;
+  background: yellow;
+}
+.container-medium {
+  max-width: 52em;
+}
+
+.container-banner {
+  max-width: 52em;
+  background: #95CD69;
+}
+
+.container-wide {
+  max-width: 70em;
+}
+.container-graphs {
+  max-height: 25em;
+}
+/* columns */
+.col-slim { background: #95CD69; }
+/*.col-medium { background: orange; }*/
+.col-wide { background: gray; }
+
+.col-slim,
+.col-narrow,
+.col-narrow--right { margin-bottom: 1.5em; }
+  /* column modifiers */
+  .col-narrow--right { background: white; }
+  .col-wide--right { background: white; }
+  .col-slim {
+    width: 5%;
+    margin-bottom: 0;
+  }
+
+/* footer */
+
+.footer
+{
+	background: #257E56;
+	border: 0;
+ 	margin: 0;
+	padding: 5em;
+  margin: auto;
+ 	padding-top: 8em;
+ 	padding-bottom: 8em;
+  text-align: center;
+}
+
+/* image
+
+.img_sidebar {
+  align: center;
+}
+
+*/
+
+/* navbar */
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: #2EA370;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+	background-color: #90ee90;
+}
+/*
+.logo {
+	float: left;
+  img: url("sprinkler_logo.png");
+}
+*/
+.filter-bar {
+    top: 0;
+    width: 100%;
+    height: 3em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: powderblue;
+    float: left;
+}
+
+/* -------------------------------
+wide
+------------------------------- */
+
+@media (min-width: 38em)
+{
+  .row--padding-footer-bar {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+    text-align: center;
+  }
+  .row--padding-menu {
+    padding-top: 1.000em;
+    padding-bottom: 1.000em;
+    /* ??px/??px*/
+  }
+  .row--padding-medium {
+    padding-top: 4.1875em;
+    padding-bottom: 4.1875em;
+    /* 35px/16px*/
+  }
+  .row--padding-wide {
+    padding-top: 10em;
+    padding-bottom: 10em;
+    /* 35px/16px*/
+  }
+  .row--padding-banner {
+    padding-top: 12.5em;
+    padding-bottom: 10em;
+  }
+  .container-narrow,
+  .container-medium,
+  .container-wide {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .col-slim,
+  .col-narrow,
+  .col-wide { float: left; }
+  .col-narrow--right,
+  .col-wide--right { float: right; }
+
+
+
+  .col-wide,
+  .col-wide--right { width: 90%; } /* was 61% */
+
+  .col-medium { width: 50%; }
+
+  .col-narrow,
+  .col-narrow--right {
+    width: 25%;
+    margin-bottom: 0;
+  }
+  .col-slim {
+    width: 5%;
+    margin-bottom: 0;
+  }
+}
